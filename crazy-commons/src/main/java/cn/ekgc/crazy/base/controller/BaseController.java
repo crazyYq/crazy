@@ -17,4 +17,5 @@ public class BaseController {
 
 	@Autowired
 	private HttpSession session;
+
 }
