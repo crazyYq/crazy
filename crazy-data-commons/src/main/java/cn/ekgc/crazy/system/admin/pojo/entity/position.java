@@ -7,18 +7,17 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("sys_admin")
-public class Admin extends BaseEntity {
+@TableName("sys_position")
+public class position extends BaseEntity {
 	private Long id;
-	private String no;
+	private String name;
+	private String orgCode;
+	private String leaderName;
+	private String province;
+	private String city;
+	private String county;
+	private String address;
 	private String cellphone;
-	private String password;
-	private String identity;
-	private String position;
-	private String department;
-	private String idCard;
-	private String techTitle;
-	private String eduBackground;
 	private String status;
 	private String createdBy;
 	private Date createTime;
