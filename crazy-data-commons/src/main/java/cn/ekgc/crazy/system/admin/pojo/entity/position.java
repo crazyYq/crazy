@@ -4,23 +4,15 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.util.Date;
-
+/**
+ * 人员职务信息表
+ */
 @Data
 @TableName("sys_position")
 public class position extends BaseEntity {
-	private Long id;
-	private String name;
-	private String orgCode;
-	private String leaderName;
-	private String province;
-	private String city;
-	private String county;
-	private String address;
-	private String cellphone;
-	private String status;
-	private String createdBy;
-	private Date createTime;
-	private String modifiedBy;
-	private Date modifiedTime;
+	private Long id;						//主键
+	private String deptId;					//所属部门
+	private String name;					//职务名称
+	private String code;					//职务编号
+	private String status;					//系统状态Y启用N禁用
 }
