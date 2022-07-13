@@ -6,6 +6,9 @@ import lombok.Data;
 
 import java.sql.Date;
 
+/**
+ * 门（急）诊病历检查报告详情表
+ */
 @Data
 @TableName("emr_clinic_check_report")
 public class CheckReport extends BaseEntity {

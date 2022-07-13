@@ -6,6 +6,9 @@ import lombok.Data;
 
 import java.sql.Date;
 
+/**
+ * 门（急）诊病历医嘱详情表
+ */
 @Data
 @TableName("emr_clinic_advice")
 public class Advice extends BaseEntity {
