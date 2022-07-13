@@ -1,4 +1,4 @@
-package cn.ekgc.crazy.emr.sum.pojo.entity;
+package cn.ekgc.crazy.emr.clinic.obs.pojo.entity;
 
 import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
