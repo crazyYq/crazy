@@ -3,11 +3,9 @@ package cn.ekgc.crazy.emr.clinic.clinic.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.sql.Date;
-
 @Data
 @TableName("emr_clinic_comm")
-public class comm {
+public class Comm {
 	private Long id;                             //主键
 	private String emrClinic;                    //所属门（急）诊病历
 	private String phoneCat;                     //联系电话-类别
