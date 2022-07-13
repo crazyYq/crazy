@@ -20,5 +20,4 @@ public class Admin extends BaseEntity {
 	private String idCard;					//身份证号码
 	private String techTitle;				//专业技术职务
 	private String eduBackground;			//学历
-	private String status;					//系统状态，0-禁用，1-启用
 }

@@ -14,5 +14,4 @@ public class position extends BaseEntity {
 	private String deptId;					//所属部门
 	private String name;					//职务名称
 	private String code;					//职务编号
-	private String status;					//系统状态Y启用N禁用
 }
