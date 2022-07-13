@@ -1,5 +1,6 @@
 package cn.ekgc.crazy.emr.sum.pojo.entity;
 
+import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -13,7 +14,7 @@ import java.util.Date;
  */
 @Data
 @TableName("clinic_sum_trauma")
-public class Tranma {
+public class Trauma extends BaseEntity {
     private Long id;                                // 主键
     private String clinicSum;                       // 所属病历概要数据
     private String history;                         // 既往疾病史
