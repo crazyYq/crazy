@@ -18,5 +18,4 @@ public class Menu extends BaseEntity {
 	private String url;					//链接地址
 	private String icon;				//图标
 	private String order;				//顺序
-	private String status;				//系统状态
 }
