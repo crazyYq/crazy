@@ -4,8 +4,6 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.util.Date;
-
 @Data
 @TableName("sys_position")
 public class position extends BaseEntity {
@@ -19,8 +17,4 @@ public class position extends BaseEntity {
 	private String address;
 	private String cellphone;
 	private String status;
-	private String createdBy;
-	private Date createTime;
-	private String modifiedBy;
-	private Date modifiedTime;
 }

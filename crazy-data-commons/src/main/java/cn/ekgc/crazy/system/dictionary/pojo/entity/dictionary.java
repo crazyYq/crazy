@@ -1,4 +1,15 @@
 package cn.ekgc.crazy.system.dictionary.pojo.entity;
 
-public class dictionary {
+import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+@Data
+@TableName("sys_data_dictionary")
+public class dictionary extends BaseEntity {
+	private Long id;						//主键id
+	private String parent;					//上级字典
+	private String name;					//字典名称
+	private String code;					//字典编码
+	private String status;					//字典编码
 }
