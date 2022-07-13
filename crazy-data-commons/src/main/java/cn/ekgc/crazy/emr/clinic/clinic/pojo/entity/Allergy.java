@@ -8,7 +8,7 @@ import java.sql.Date;
 
 @Data
 @TableName("emr_clinic_allergy")
-public class allergy extends BaseEntity {
+public class Allergy extends BaseEntity {
 	private Long id;                              //主键
 	private String emrClinic;                     //所属门（急）诊病历
 	private String history;                       //过敏史
