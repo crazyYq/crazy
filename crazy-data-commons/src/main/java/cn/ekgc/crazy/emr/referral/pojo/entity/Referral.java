@@ -98,5 +98,4 @@ public class Referral extends BaseEntity {
 	private String trtProcName;          	  //诊疗过程名称
 	private String trtProcDesc;          	  //诊疗过程描述S
 	private String mrStatus;                  //病历状态：0-待接诊，1-诊疗完毕，2-未接诊，3-接诊后转诊/院，4-挂号错误
-	private String status;				 	//系统状态，0-禁用，1-启用
 }

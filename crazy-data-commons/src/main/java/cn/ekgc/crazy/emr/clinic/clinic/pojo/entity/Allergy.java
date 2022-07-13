@@ -4,8 +4,6 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.sql.Date;
-
 @Data
 @TableName("emr_clinic_allergy")
 public class Allergy extends BaseEntity {
