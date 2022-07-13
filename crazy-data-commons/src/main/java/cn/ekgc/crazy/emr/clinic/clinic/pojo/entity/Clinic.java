@@ -11,7 +11,7 @@ import java.sql.Date;
  */
 @Data
 @TableName("emr_clinic")
-public class clinic extends BaseEntity {
+public class Clinic extends BaseEntity {
 	private Long id;                          //主键
 	private String emrNo;                     //病历号
 	private String clinicNo;                  //门诊号

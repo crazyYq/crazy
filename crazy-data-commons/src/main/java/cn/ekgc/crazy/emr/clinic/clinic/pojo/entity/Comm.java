@@ -3,9 +3,7 @@ package cn.ekgc.crazy.emr.clinic.clinic.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-/**
- * 门（急）诊病历通信详情表
- */
+import java.sql.Date;
 
 @Data
 @TableName("emr_clinic_comm")
