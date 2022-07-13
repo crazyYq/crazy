@@ -6,9 +6,12 @@ import lombok.Data;
 
 import java.sql.Date;
 
+/**
+ * 门（急）诊病历医嘱详情表
+ */
 @Data
 @TableName("emr_clinic_advice")
-public class advice extends BaseEntity {
+public class Advice extends BaseEntity {
 	private Long id;                               //主键
 	private String emrClinic;                      //所属门（急）诊病历
 	private Date startDate;                        //医嘱开嘱日期时间

@@ -6,9 +6,12 @@ import lombok.Data;
 
 import java.sql.Date;
 
+/**
+ * 门（急）诊病历信息表
+ */
 @Data
 @TableName("emr_clinic")
-public class clinic extends BaseEntity {
+public class Clinic extends BaseEntity {
 	private Long id;                          //主键
 	private String emrNo;                     //病历号
 	private String clinicNo;                  //门诊号
@@ -97,5 +100,6 @@ public class clinic extends BaseEntity {
 	private String trtProcName;               //诊疗过程名称
 	private String trtProcDesc;               //诊疗过程描述
 	private String mrStatus;                  //病历状态
+	private String status;					//系统状态，0-禁用，1-启用
 
 }

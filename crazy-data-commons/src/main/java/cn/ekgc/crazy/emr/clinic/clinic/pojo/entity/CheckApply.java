@@ -6,9 +6,12 @@ import lombok.Data;
 
 import java.sql.Date;
 
+/**
+ * 门（急）诊病历检查申请详情表
+ */
 @Data
 @TableName("emr_clinic_check_apply")
-public class checkApply extends BaseEntity {
+public class CheckApply extends BaseEntity {
 	private Long id;                             //主键
 	private String emrClinic;                    //所属门（急）诊病历
 	private String checkOrg;                     //检查申请单—机构（科室）
