@@ -1,5 +1,6 @@
 package cn.ekgc.crazy.emr.clinic.clinic.pojo.entity;
 
+import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -13,7 +14,7 @@ import java.sql.Date;
  */
 @TableName("emr_clinic_past")
 @Data
-public class Past {
+public class Past extends BaseEntity {
     private Long id;                                // 主键
     private String emrClinic;                       // 所属门（急）诊病历
     private Date itemName;                          // 既往观察-项目名称
