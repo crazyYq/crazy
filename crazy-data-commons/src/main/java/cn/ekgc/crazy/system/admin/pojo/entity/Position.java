@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_position")
-public class position extends BaseEntity {
+public class Position extends BaseEntity {
 	private Long id;						//主键
 	private String deptId;					//所属部门
 	private String name;					//职务名称

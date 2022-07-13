@@ -5,5 +5,5 @@ import lombok.Data;
 
 @Data
 @TableName("sys_education")
-public class education {
+public class Education {
 }

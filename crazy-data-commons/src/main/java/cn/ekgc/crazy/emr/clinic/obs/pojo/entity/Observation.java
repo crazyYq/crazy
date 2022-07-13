@@ -13,7 +13,7 @@ import java.sql.Date;
  * @data 2022/7/13
  */
 @Data
-@TableName("emr_clinic_obs")
+@TableName("emr_obs")
 public class Observation extends BaseEntity {
 	private Long id;                          //主键
 	private String emrNo;                     //病历号

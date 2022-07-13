@@ -8,7 +8,7 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_division")
-public class division {
+public class Division {
 	private Long id;					//主键id
 	private String parent;				//上级行政区划编码
 	private String name;				//行政区划名称

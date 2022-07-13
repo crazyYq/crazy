@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_hospital")
-public class hospital extends BaseEntity {
+public class Hospital extends BaseEntity {
 	private Long id;						//主键
 	private String name;					//名称
 	private String orgCode;					//组织机构代码
