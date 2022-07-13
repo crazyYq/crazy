@@ -100,6 +100,5 @@ public class Clinic extends BaseEntity {
 	private String trtProcName;               //诊疗过程名称
 	private String trtProcDesc;               //诊疗过程描述
 	private String mrStatus;                  //病历状态
-	private String status;					//系统状态，0-禁用，1-启用
 
 }
