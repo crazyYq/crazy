@@ -1,4 +1,4 @@
-package cn.ekgc.crazy.emr.clinic.pojo.entity;
+package cn.ekgc.crazy.emr.clinic.clinic.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
