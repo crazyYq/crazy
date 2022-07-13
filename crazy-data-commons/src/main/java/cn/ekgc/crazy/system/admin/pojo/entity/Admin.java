@@ -4,6 +4,9 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+/**
+ *系统用户表
+ */
 @Data
 @TableName("sys_admin")
 public class Admin extends BaseEntity {

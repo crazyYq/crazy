@@ -3,6 +3,9 @@ package cn.ekgc.crazy.system.division.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+/**
+ * 行政区划表
+ */
 @Data
 @TableName("sys_division")
 public class division {

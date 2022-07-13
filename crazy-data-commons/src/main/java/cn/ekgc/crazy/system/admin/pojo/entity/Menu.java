@@ -4,6 +4,10 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+/**
+ * 系统功能菜单表
+ */
+
 @Data
 @TableName("sys_menu")
 public class Menu extends BaseEntity {

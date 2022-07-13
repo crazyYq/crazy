@@ -4,6 +4,9 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+/**
+ * 医院信息表
+ */
 @Data
 @TableName("sys_hospital")
 public class hospital extends BaseEntity {

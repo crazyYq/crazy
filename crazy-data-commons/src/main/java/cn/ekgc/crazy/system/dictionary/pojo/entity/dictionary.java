@@ -4,6 +4,9 @@ import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+/**
+ * 数据字典信息表
+ */
 @Data
 @TableName("sys_data_dictionary")
 public class dictionary extends BaseEntity {
