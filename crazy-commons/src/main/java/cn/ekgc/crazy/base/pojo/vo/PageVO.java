@@ -1,9 +1,11 @@
 package cn.ekgc.crazy.base.pojo.vo;
 
 import cn.ekgc.crazy.base.util.BaseConstants;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
 public class PageVO <E extends BaseVO>{
 	private Integer pageNum;				//当前页码
 	private Integer pageSize;				//分页数量
