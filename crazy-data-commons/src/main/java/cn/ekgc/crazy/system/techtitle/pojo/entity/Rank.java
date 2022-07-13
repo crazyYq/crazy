@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_tech_rank")
 public class Rank extends BaseEntity {
+	private static final long serialVersionUID = -344979968374975874L;
 	private Long id;					//主键
 	private String code;				//等级编码
 	private String name;				//等级名称

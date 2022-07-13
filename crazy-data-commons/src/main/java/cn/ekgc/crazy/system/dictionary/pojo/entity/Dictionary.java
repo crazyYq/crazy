@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_data_dictionary")
 public class Dictionary extends BaseEntity {
+	private static final long serialVersionUID = -7069946984663686510L;
 	private Long id;						//主键id
 	private String parent;					//上级字典
 	private String name;					//字典名称

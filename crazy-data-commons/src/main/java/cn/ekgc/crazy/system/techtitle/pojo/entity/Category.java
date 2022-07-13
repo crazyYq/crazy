@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_tech_category")
 public class Category extends BaseEntity {
+	private static final long serialVersionUID = -5335469253322549221L;
 	private Long id;					//主键
 	private String code;				//类别编码
 	private String name;				//类别名称

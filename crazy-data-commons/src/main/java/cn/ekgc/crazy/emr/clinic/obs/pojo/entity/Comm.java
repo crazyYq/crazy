@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 @TableName("emr_obs_comm")
 public class Comm extends BaseEntity {
+	private static final long serialVersionUID = 8614086209043972130L;
 	private String id;                             //主键
 	private String emrClinicObs;                    //所属急诊留观病历
 	private String phoneCat;                     //联系电话-类别

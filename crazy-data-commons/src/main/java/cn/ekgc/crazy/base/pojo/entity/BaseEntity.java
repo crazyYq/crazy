@@ -8,6 +8,7 @@ import java.util.Date;
 
 @Data
 public class BaseEntity implements Serializable {
+	private static final long serialVersionUID = 8229197622911204174L;
 	private String staus;					//系统状态：Y-启用  N-禁用
 	@TableField("createdBy")
 	private String createdBy;                   // 创建人

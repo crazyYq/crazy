@@ -13,6 +13,7 @@ import lombok.Data;
 @TableName("pa_insurance")
 @Data
 public class Insurance extends BaseEntity {
+    private static final long serialVersionUID = -6415499024808937437L;
     private String id;                      //主键
     private String patient;                 //所属病人信息
     private String insurance;               //医保信息

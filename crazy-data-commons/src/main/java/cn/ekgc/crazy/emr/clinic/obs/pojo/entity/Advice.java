@@ -9,6 +9,7 @@ import java.sql.Date;
 @Data
 @TableName("emr_obs_advice")
 public class Advice extends BaseEntity {
+	private static final long serialVersionUID = 9217230648149960343L;
 	private String id;                               //主键
 	private String emrClinicObs;                      //所属急诊留观病历
 	private Date startDate;                        //医嘱开嘱日期时间

@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @TableName("emr_clinic_allergy")
 public class Allergy extends BaseEntity {
+	private static final long serialVersionUID = 7548730478402937335L;
 	private Long id;                              //主键
 	private String emrClinic;                     //所属门（急）诊病历
 	private String history;                       //过敏史

@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_admin")
 public class Admin extends BaseEntity {
+	private static final long serialVersionUID = -4496799791928493396L;
 	private Long id;						//主键
 	private String no;						//工号
 	private String cellphone;				//手机号码

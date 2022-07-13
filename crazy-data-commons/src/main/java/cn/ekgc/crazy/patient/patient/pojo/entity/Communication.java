@@ -13,6 +13,7 @@ import lombok.Data;
 @TableName("pa_communication")
 @Data
 public class Communication extends BaseEntity {
+    private static final long serialVersionUID = 688896395968666420L;
     private String id;                      //主键
     private String patient;                 //所属病人信息
     private String phoneCat;                //联系电话类别
