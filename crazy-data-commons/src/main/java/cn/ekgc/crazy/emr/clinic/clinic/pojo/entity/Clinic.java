@@ -12,6 +12,7 @@ import java.sql.Date;
 @Data
 @TableName("emr_clinic")
 public class Clinic extends BaseEntity {
+	private static final long serialVersionUID = 5473096126124999279L;
 	private Long id;                          //主键
 	private String emrNo;                     //病历号
 	private String clinicNo;                  //门诊号

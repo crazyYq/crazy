@@ -15,6 +15,7 @@ import java.sql.Date;
 @TableName("emr_clinic_present")
 @Data
 public class Present extends BaseEntity {
+    private static final long serialVersionUID = 570567613564416797L;
     private Long id;                                 // 主键
     private String emrClinic;                        // 所属门（急）诊病历
     private Date onsetDate;                          // 起病时间

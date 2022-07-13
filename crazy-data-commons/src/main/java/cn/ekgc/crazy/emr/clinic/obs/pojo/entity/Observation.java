@@ -15,6 +15,7 @@ import java.sql.Date;
 @Data
 @TableName("emr_obs")
 public class Observation extends BaseEntity {
+	private static final long serialVersionUID = 2339912773090790619L;
 	private Long id;                          //主键
 	private String emrNo;                     //病历号
 	private String clinicNo;                  //门诊号

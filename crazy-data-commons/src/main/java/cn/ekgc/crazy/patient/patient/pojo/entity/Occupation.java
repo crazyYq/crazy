@@ -13,6 +13,7 @@ import lombok.Data;
 @TableName("pa_occupation")
 @Data
 public class Occupation extends BaseEntity {
+    private static final long serialVersionUID = -1575759675009016339L;
     private String id;                      //主键
     private String patient;                 //所属病人信息
     private String occupation;              //职业信息

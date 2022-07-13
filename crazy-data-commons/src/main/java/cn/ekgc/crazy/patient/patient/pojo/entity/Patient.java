@@ -15,6 +15,7 @@ import java.util.Date;
 @TableName("pa_patient")
 @Data
 public class Patient extends BaseEntity {
+    private static final long serialVersionUID = 5558316011083760264L;
     private String id;                           //主键
     private String emrNo;                       //病历号
     private String name;                        //姓名

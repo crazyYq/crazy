@@ -13,6 +13,7 @@ import lombok.Data;
 @TableName("pa_address")
 @Data
 public class Address extends BaseEntity {
+    private static final long serialVersionUID = -8706398813032893161L;
     private String id;                      //主键
     private String patient;                 //所属病人信息
     private String type;                    //地址类别

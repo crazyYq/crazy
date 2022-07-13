@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_identity")
 public class Identity extends BaseEntity {
+	private static final long serialVersionUID = -4567913575904654941L;
 	private Long id;					//主键
 	private String code;				//身份编码
 	private String name;				//身份信息

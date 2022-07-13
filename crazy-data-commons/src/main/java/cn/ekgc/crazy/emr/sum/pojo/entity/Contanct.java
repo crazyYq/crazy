@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 @TableName("clinic_sum_contact")
 public class Contanct extends BaseEntity {
+    private static final long serialVersionUID = 4840659942237678229L;
     private Long id;                         //主键
     private String clinicSum;                //所属病历概要数据
     private String markCatCode;              //标识号-类别代码

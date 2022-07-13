@@ -15,6 +15,7 @@ import java.util.Date;
 @Data
 @TableName("clinic_sum_trauma")
 public class Trauma extends BaseEntity {
+    private static final long serialVersionUID = 8415339335879627921L;
     private Long id;                                // 主键
     private String clinicSum;                       // 所属病历概要数据
     private String history;                         // 既往疾病史

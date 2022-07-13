@@ -15,6 +15,7 @@ import java.sql.Date;
 @Data
 @TableName("emr_referral")
 public class Referral extends BaseEntity {
+	private static final long serialVersionUID = 4655538545647573062L;
 	private Long id;                          //主键
 	private String emrNo;                     //病历号
 	private String clinicNo;                  //门诊号

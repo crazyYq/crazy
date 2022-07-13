@@ -1,5 +1,6 @@
 package cn.ekgc.crazy.system.division.pojo.entity;
 
+import cn.ekgc.crazy.base.pojo.entity.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -8,7 +9,8 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_division")
-public class Division {
+public class Division extends BaseEntity {
+	private static final long serialVersionUID = -4054659349931959257L;
 	private Long id;					//主键id
 	private String parent;				//上级行政区划编码
 	private String name;				//行政区划名称

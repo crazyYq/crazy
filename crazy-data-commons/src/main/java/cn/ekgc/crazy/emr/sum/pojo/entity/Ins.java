@@ -13,6 +13,7 @@ import lombok.Data;
 @TableName("clinic_sum_ins")
 @Data
 public class Ins extends BaseEntity {
+    private static final long serialVersionUID = 8375198673940372654L;
     private Long id;                        //主键
     private String clinicSum;               //所属病历概要信息
     private String insCat;                //医疗保险-类别

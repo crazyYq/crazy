@@ -15,6 +15,7 @@ import java.util.Date;
 @Data
 @TableName("clinic_sum")
 public class Resume extends BaseEntity {
+    private static final long serialVersionUID = 6784314067994887615L;
     private Long id;                          //主键
     private String emrNo;                     //门诊号
     private String clinicNo;                  //病历号

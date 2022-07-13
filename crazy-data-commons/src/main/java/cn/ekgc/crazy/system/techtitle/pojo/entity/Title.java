@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 @TableName("sys_tech-title")
 public class Title extends BaseEntity {
+	private static final long serialVersionUID = 3050843520098073998L;
 	private Long id;					//主键
 	private String type;				//所属类别
 	private String grade;				//等级

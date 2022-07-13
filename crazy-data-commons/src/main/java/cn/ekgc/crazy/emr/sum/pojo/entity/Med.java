@@ -15,6 +15,7 @@ import java.util.Date;
 @TableName("clinic_sum_med")
 @Data
 public class Med extends BaseEntity {
+    private static final long serialVersionUID = 731713193505767839L;
     private Long id;                             //主键
     private String clinicSum;                   //所属病历概要信息
     private String medUseage;                   //药物用法
