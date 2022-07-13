@@ -1,4 +1,4 @@
-package cn.ekgc.crazy.system.admin.util;
+package cn.ekgc.crazy.system.admin.pojo.util;
 
 import cn.ekgc.crazy.system.admin.pojo.entity.Identity;
 import cn.ekgc.crazy.system.admin.pojo.vo.IdentityVO;

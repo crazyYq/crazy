@@ -5,6 +5,8 @@ import cn.ekgc.crazy.base.pojo.vo.QueryPageVO;
 import cn.ekgc.crazy.system.admin.pojo.vo.IdentityVO;
 import cn.ekgc.crazy.system.admin.service.IdentityService;
 import cn.ekgc.crazy.system.admin.transport.IdentityTransport;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,8 +23,9 @@ import javax.annotation.Resource;
 public class IdentityTransportImpl implements IdentityTransport {
 	@Resource(name = "identityService")
 	private IdentityService identityService;
+	@PostMapping("/page")
 	@Override
-	public PageVO<IdentityVO> getPage(QueryPageVO<IdentityVO> queryPageVO) throws Exception {
+	public PageVO<IdentityVO> getPage(@RequestBody QueryPageVO<IdentityVO> queryPageVO) throws Exception {
 		IdentityVO queryVO = queryPageVO.getQueryVO();
 		PageVO<IdentityVO> pageVO = queryPageVO.getPageVO();
 		return identityService.getPage(queryVO, pageVO);

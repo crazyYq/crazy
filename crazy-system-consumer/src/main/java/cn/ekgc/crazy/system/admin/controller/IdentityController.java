@@ -36,6 +36,8 @@ public class IdentityController extends BaseController {
 			QueryPageVO<IdentityVO> queryPageVO = new QueryPageVO<>(queryVO, pageNum, pageSize);
 			// 进行分页查询，获得 PageVO 对象
 			PageVO<IdentityVO> pageVO = identityTransport.getPage(queryPageVO);
+
+
 			// 返回结果
 			return ResponseVO.seccessResponseVO("查询成功", pageVO);
 

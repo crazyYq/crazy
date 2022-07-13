@@ -31,6 +31,7 @@ public class IdentityServiceImpl implements IdentityService {
 	@Override
 	public PageVO<IdentityVO> getPage(IdentityVO queryVO, PageVO<IdentityVO> pageVO) throws Exception {
 		// 将查询视图转换为查询实体
+		System.out.println(pageVO.getPageNum()+"  "+pageVO.getPageSize()+" "+queryVO.getName() );
 		Identity query = IdentityPojoMapper.INSTANCE.parseToEntity(queryVO);
 		// 创建 MyBatisPlus 查询对象
 		QueryWrapper<Identity> queryWrapper = new QueryWrapper<Identity>(query);

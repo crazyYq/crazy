@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author 救赎呐
  * @data 2022/7/13
  */
-@EnableFeignClients(basePackages = "cn.ekgc.crazy.system.admin.transport")
+@EnableFeignClients
 @EnableEurekaClient
 @SpringBootApplication
 public class SystemConsumerStarter {
