@@ -9,6 +9,8 @@ import cn.ekgc.crazy.system.admin.transport.IdentityTransport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <b>人员身份控制层类</b>
  *
@@ -42,4 +44,22 @@ public class IdentityController extends BaseController {
 			return ResponseVO.seccessResponseVO("查询成功", pageVO);
 
 	}
+	@PostMapping("/list")
+	public ResponseVO queryList(@RequestBody IdentityVO identityVO) throws Exception{
+		List<IdentityVO> identityVOList=identityTransport.getList(identityVO);
+		return ResponseVO.seccessResponseVO("查询成功",identityVOList);
+	}
+
+	@GetMapping("/id/{id}")
+	public ResponseVO queryById(@PathVariable("id") Long id) throws Exception{
+		IdentityVO identityVO=identityTransport.getById(id);
+		return ResponseVO.seccessResponseVO("查询成功",identityVO);
+	}
+
+	@GetMapping("/code/{code}")
+	public ResponseVO queryByCode(@PathVariable("code") String code) throws Exception{
+		IdentityVO identityVO=identityTransport.getByCode(code);
+		return ResponseVO.seccessResponseVO("查询成功",identityVO);
+	}
+
 }

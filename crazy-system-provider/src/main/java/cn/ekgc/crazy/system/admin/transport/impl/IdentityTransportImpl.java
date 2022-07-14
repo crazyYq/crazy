@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * <b></b>
@@ -29,5 +30,21 @@ public class IdentityTransportImpl implements IdentityTransport {
 		IdentityVO queryVO = queryPageVO.getQueryVO();
 		PageVO<IdentityVO> pageVO = queryPageVO.getPageVO();
 		return identityService.getPage(queryVO, pageVO);
+	}
+
+	@PostMapping("/list")
+	@Override
+	public List<IdentityVO> getList(@RequestBody IdentityVO identityVO) throws Exception {
+		return identityService.getList(identityVO);
+	}
+
+	@Override
+	public IdentityVO getById(Long id) throws Exception {
+		return identityService.getById(id);
+	}
+
+	@Override
+	public IdentityVO getByCode(String code) throws Exception {
+		return identityService.getByCode(code);
 	}
 }

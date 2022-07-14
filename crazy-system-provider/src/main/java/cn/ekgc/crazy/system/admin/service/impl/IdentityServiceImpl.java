@@ -51,4 +51,32 @@ public class IdentityServiceImpl implements IdentityService {
 
 		return pageVO;
 	}
+
+	@Override
+	public List<IdentityVO> getList(IdentityVO identityVO) throws Exception {
+		//试图转实体
+		Identity identity=IdentityPojoMapper.INSTANCE.parseToEntity(identityVO);
+		//创建MyBatis查询对象
+		QueryWrapper<Identity> queryWrapper=new QueryWrapper<Identity>(identity);
+		//列表查询
+		List<Identity> identityList=identityDao.selectList(queryWrapper);
+		return IdentityPojoMapper.INSTANCE.parseToVOList(identityList);
+	}
+
+	@Override
+	public IdentityVO getById(Long id) throws Exception {
+		//根据id查询实体
+		Identity identity=identityDao.selectById(id);
+		return IdentityPojoMapper.INSTANCE.parseToVO(identity);
+	}
+
+	@Override
+	public IdentityVO getByCode(String code) throws Exception {
+		//创建queryWapper查询对象
+		QueryWrapper<Identity> queryWrapper=new QueryWrapper<Identity>();
+		queryWrapper.eq("code",code);
+		//查询实体
+		Identity identity=identityDao.selectOne(queryWrapper);
+		return IdentityPojoMapper.INSTANCE.parseToVO(identity);
+	}
 }
