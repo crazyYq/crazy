@@ -9,6 +9,7 @@ import java.sql.Date;
 @Data
 @TableName("emr_obs_past")
 public class Past extends BaseEntity {
+	private static final long serialVersionUID = 5013644198458540500L;
 	private Long id;                          //主键
 	private String emrClinicObs;              //所属急诊留观病历
 	private String itemName;                  //既往观察-项目名称

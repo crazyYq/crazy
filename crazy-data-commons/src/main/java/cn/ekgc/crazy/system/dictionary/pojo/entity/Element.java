@@ -6,7 +6,8 @@ import lombok.Data;
 
 @Data
 @TableName("sys_data_element")
-public class element extends BaseEntity {
+public class Element extends BaseEntity {
+	private static final long serialVersionUID = -7954765355770090181L;
 	private Long id;						//主键id
 	private String parent;					//所属数据元
 	private String name;					//数据元值

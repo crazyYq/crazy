@@ -11,6 +11,7 @@ import lombok.Data;
 @Data
 @TableName("sys_menu")
 public class Menu extends BaseEntity {
+	private static final long serialVersionUID = 5375713716995525511L;
 	private Long id;					//主键
 	private String parent;				//上级功能
 	private String name;				//功能名称

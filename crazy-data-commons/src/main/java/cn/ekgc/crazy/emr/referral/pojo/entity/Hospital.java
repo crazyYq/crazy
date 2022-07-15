@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 @TableName("emr_referral_hospital")
 public class Hospital extends BaseEntity {
+	private static final long serialVersionUID = -4819665724496858251L;
 	private Long id;							//主键
 	private String emrReferral;					//所属转诊（院）记录
 	private String orgName;						//机构名称

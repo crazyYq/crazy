@@ -15,6 +15,7 @@ import java.util.Date;
 @TableName("clinic_sum_medcost")
 @Data
 public class Medcost extends BaseEntity {
+    private static final long serialVersionUID = -2089634174261939516L;
     private Long id;                                    //主键
     private String clinicSum;                           //所属病历概要数据
     private String clinicCostCat;                       //门诊费用-分类

@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 @TableName("emr_obs_cure")
 public class Cure extends BaseEntity {
+	private static final long serialVersionUID = -3383976542747778027L;
 	private String id;                             //主键
 	private String ermClinicObs;                   //所属急诊留观病历
 	private String examine;                        //拟做的检查

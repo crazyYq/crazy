@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 @TableName("emr_referral_comm")
 public class Comm extends BaseEntity {
+	private static final long serialVersionUID = 6096062482919646502L;
 	private Long id;						//主键
 	private String emrReferral;				//所属转诊（院）记录
 	private String phoneCat;				//联系电话-类别

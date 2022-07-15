@@ -4,39 +4,62 @@ import cn.ekgc.crazy.base.controller.BaseController;
 import cn.ekgc.crazy.base.pojo.vo.PageVO;
 import cn.ekgc.crazy.base.pojo.vo.QueryPageVO;
 import cn.ekgc.crazy.base.pojo.vo.ResponseVO;
-import cn.ekgc.crazy.base.util.BaseConstants;
-import cn.ekgc.crazy.base.util.TokenUtil;
-import cn.ekgc.crazy.system.admin.pojo.vo.AdminVO;
 import cn.ekgc.crazy.system.admin.pojo.vo.IdentityVO;
-import cn.ekgc.crazy.system.transport.IdentityTransport;
-import jdk.nashorn.internal.ir.RuntimeNode;
+import cn.ekgc.crazy.system.admin.transport.IdentityTransport;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
- * <b></b>
+ * <b>人员身份控制层类</b>
  *
- * @author ASUS
- * @data 2022/7/14
+ * @author 救赎呐
+ * @data 2022/7/13
  */
-@RestController
+@RestController("identityController")
 @RequestMapping("/system/admin/identity")
 public class IdentityController extends BaseController {
-    @Autowired
-    private IdentityTransport identityTransport;
-    @PostMapping("/page/{pageNum}/{pageSize}")
-    public ResponseVO queryPage(@PathVariable("pageNum") Integer pageNum,@PathVariable("pageSize") Integer pageSize,
-                                IdentityVO queryVO) throws Exception {
-        AdminVO adminVO = (AdminVO) TokenUtil.validateToken(request.getHeader(BaseConstants.BASE_TOKEN_HEADER));
-        if (adminVO != null) {
-            QueryPageVO queryPageVO = new QueryPageVO<>(queryVO, pageNum, pageSize);
-            PageVO<IdentityVO> pageVO = identityTransport.getPage(queryPageVO);
-            return ResponseVO.successResponseVO("查询成功", pageVO);
-        } else {
-            return ResponseVO.unauthResponseVO();
-        }
-    }
+	@Autowired
+	private IdentityTransport identityTransport;
+
+	/**
+	 * <b>分页查询</b>
+	 * @param pageNum
+	 * @param pageSize
+	 * @param queryVO
+	 * @return
+	 * @throws Exception
+	 */
+	@PostMapping("/page/{pageNum}/{pageSize}")
+	public ResponseVO queryPage(@PathVariable("pageNum") Integer pageNum, @PathVariable("pageSize") Integer pageSize,
+								@RequestBody IdentityVO queryVO) throws Exception {
+			// 创建查询分页视图
+			QueryPageVO<IdentityVO> queryPageVO = new QueryPageVO<>(queryVO, pageNum, pageSize);
+			// 进行分页查询，获得 PageVO 对象
+			PageVO<IdentityVO> pageVO = identityTransport.getPage(queryPageVO);
+
+
+			// 返回结果
+			return ResponseVO.seccessResponseVO("查询成功", pageVO);
+
+	}
+	@PostMapping("/list")
+	public ResponseVO queryList(@RequestBody IdentityVO identityVO) throws Exception{
+		List<IdentityVO> identityVOList=identityTransport.getList(identityVO);
+		return ResponseVO.seccessResponseVO("查询成功",identityVOList);
+	}
+
+	@GetMapping("/id/{id}")
+	public ResponseVO queryById(@PathVariable("id") Long id) throws Exception{
+		IdentityVO identityVO=identityTransport.getById(id);
+		return ResponseVO.seccessResponseVO("查询成功",identityVO);
+	}
+
+	@GetMapping("/code/{code}")
+	public ResponseVO queryByCode(@PathVariable("code") String code) throws Exception{
+		IdentityVO identityVO=identityTransport.getByCode(code);
+		return ResponseVO.seccessResponseVO("查询成功",identityVO);
+	}
+
 }

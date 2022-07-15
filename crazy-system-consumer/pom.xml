@@ -19,12 +19,12 @@
   <!-- 配置项目父级依赖：Witmed Parent [END] -->
 
   <dependencies>
-    <!-- 配置依赖：Witmed Commons [BEGIN] -->
+    <!-- 配置依赖：crazy Commons [BEGIN] -->
     <dependency>
       <groupId>cn.ekgc.crazy</groupId>
       <artifactId>crazy-commons</artifactId>
       <version>1.0.0</version>
     </dependency>
-    <!-- 配置依赖：Witmed Commons [END] -->
+    <!-- 配置依赖：crazy Commons [END] -->
   </dependencies>
 </project>
