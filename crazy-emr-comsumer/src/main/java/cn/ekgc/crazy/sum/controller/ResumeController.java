@@ -1,4 +1,4 @@
-package cn.ekgc.crazy.system.division.controller;
+package cn.ekgc.crazy.sum.controller;
 
 import cn.ekgc.crazy.base.controller.BaseController;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @author ASUS
  * @data 2022/7/15
  */
-@RestController("divisionController")
-public class DivisionController extends BaseController {
+@RestController("resumeController")
+public class ResumeController extends BaseController {
 }
