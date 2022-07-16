@@ -1,4 +1,4 @@
-package cn.ekgc.crazy.system.dictonary.controller;
+package cn.ekgc.crazy.system.division.controller;
 
 import cn.ekgc.crazy.base.controller.BaseController;
 import org.springframework.web.bind.annotation.RestController;
